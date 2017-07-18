@@ -1,0 +1,284 @@
+{
+  "post_url": "http://116.62.187.184:6800/schedule.json",
+  "login": [
+    {
+      "plat_id": "21097",
+      "post_data": {
+        "project": "exporterHelper",
+        "spider": "aif_plat_login",
+        "plat_id": "21097",
+        "login_url": "http://interface.weidai.com.cn/aif/login",
+        "username": "aif_username",
+        "password": "838A0F29CB246B810D57899882D7E04"
+      }
+    },
+    {
+      "plat_id": "93172",
+      "post_data": {
+        "project": "exporterHelper",
+        "spider": "aif_plat_login",
+        "plat_id": "93172",
+        "login_url": "https://apis.niubangold.com/api/openData/login",
+        "username": "zd_data",
+        "password": "zd4wd@apidata",
+        "secret_key": "01abe51329afeca1"
+      }
+    },
+    {
+      "plat_id": "89394",
+      "post_data": {
+        "project": "exporterHelper",
+        "spider": "aif_plat_login",
+        "plat_id": "89394",
+        "login_url": "https://export.tongbanjie.com/aif/api/login",
+        "username": "tongbanjie",
+        "password": "test123",
+        "is_json": 1,
+        "is_upper": 1
+      }
+    },
+    {
+      "plat_id": "23096",
+      "post_data": {
+        "project": "exporterHelper",
+        "spider": "aif_plat_login",
+        "plat_id": "23096",
+        "login_url": "https://www.xinhehui.com/Api/XxiPlu/login",
+        "username": "xxpl_xhh",
+        "password": "xxpl_zjhjpt",
+        "is_upper": 1
+      }
+    },
+    {
+      "plat_id": "22456",
+      "post_data": {
+        "project": "exporterHelper",
+        "spider": "aif_plat_login",
+        "plat_id": "22456",
+        "login_url": "https://www.zjmax.com/dataout/login",
+        "username": "zj201608011417",
+        "password": "isdfsdf234908234kljsdf",
+        "is_upper": 1
+      }
+    },
+    {
+      "plat_id": "89234",
+      "post_data": {
+        "project": "exporterHelper",
+        "spider": "aif_plat_login",
+        "plat_id": "89234",
+        "login_url": "https://api.zwgt.com/interface-login",
+        "username": "zwgt",
+        "password": "zwgt2016",
+        "is_upper": 1,
+        "is_json": 1
+      }
+    }
+  ],
+  "daily": [
+    {
+      "plat_id": "21097",
+      "post_data": {
+        "project": "aif",
+        "spider": "meiri",
+        "need_token": 1,
+        "plat_id": "21097",
+        "formated_url": "http://interface.weidai.com.cn/aif/dailyData",
+        "password": "838A0F29CB246B810D57899882D7E04"
+      }
+    },
+    {
+      "plat_id": "93172",
+      "post_data": {
+        "project": "aif",
+        "spider": "meiri",
+        "need_token": 1,
+        "plat_id": "93172",
+        "formated_url": "https://apis.niubangold.com/api/openData/dailyData",
+        "password": "01abe51329afeca1"
+      }
+    },
+    {
+      "plat_id": "89394",
+      "post_data": {
+        "project": "aif",
+        "spider": "meiri",
+        "need_token": 1,
+        "plat_id": "89394",
+        "formated_url": "https://export.tongbanjie.com/aif/api/dailyData",
+        "password": "test123",
+        "is_json": 1,
+        "is_upper": 1
+      }
+    },
+    {
+      "plat_id": "23096",
+      "post_data": {
+        "project": "aif",
+        "spider": "meiri",
+        "need_token": 1,
+        "plat_id": "23096",
+        "formated_url": "https://www.xinhehui.com/Api/XxiPlu/dailyData",
+        "password": "xxpl_zjhjpt",
+        "is_upper": 1
+      }
+    },
+    {
+      "plat_id": "22456",
+      "post_data": {
+        "project": "aif",
+        "spider": "meiri",
+        "need_token": 1,
+        "plat_id": "22456",
+        "formated_url": "https://www.zjmax.com/dataout/dailyData",
+        "password": "isdfsdf234908234kljsdf",
+        "is_upper": 1
+      }
+    },
+    {
+      "plat_id": "89234",
+      "post_data": {
+        "project": "aif",
+        "spider": "meiri",
+        "need_token": 1,
+        "plat_id": "89234",
+        "formated_url": "https://api.zwgt.com/interface-dailyData",
+        "password": "zwgt2016",
+        "is_upper": 1,
+        "is_json": 1
+      }
+    },
+    {
+      "plat_id": "89390",
+      "post_data": {
+        "project": "aif",
+        "spider": "meiri",
+        "plat_id": "89390",
+        "formated_url": "https://trade.ddsoucai.com/third/cifc/dailyData.html"
+      }
+    },
+    {
+      "plat_id": "89391",
+      "post_data": {
+        "project": "aif",
+        "spider": "meiri",
+        "plat_id": "89391",
+        "formated_url": "https://www.huayingdai.net/dataPub/dailyData",
+        "method": 1
+      }
+    },
+    {
+      "plat_id": "22139",
+      "post_data": {
+        "project": "aif",
+        "spider": "meiri",
+        "plat_id": "22139",
+        "formated_url": "http://122.224.222.218:49110/dailyData.htm",
+        "method": 1
+      }
+    }
+  ],
+  "basic": [
+    {
+      "plat_id": "21097",
+      "post_data": {
+        "project": "aif",
+        "spider": "jiben",
+        "need_token": 1,
+        "plat_id": "21097",
+        "formated_url": "http://interface.weidai.com.cn/aif/dailyBasicData",
+        "password": "838A0F29CB246B810D57899882D7E04"
+      }
+    },
+    {
+      "plat_id": "93172",
+      "post_data": {
+        "project": "aif",
+        "spider": "jiben",
+        "need_token": 1,
+        "plat_id": "93172",
+        "formated_url": "https://apis.niubangold.com/api/openData/dailyBasicData",
+        "password": "01abe51329afeca1"
+      }
+    },
+    {
+      "plat_id": "89394",
+      "post_data": {
+        "project": "aif",
+        "spider": "jiben",
+        "need_token": 1,
+        "plat_id": "89394",
+        "formated_url": "https://export.tongbanjie.com/aif/api/dailyBasicData",
+        "password": "test123",
+        "is_json": 1,
+        "is_upper": 1
+      }
+    },
+    {
+      "plat_id": "23096",
+      "post_data": {
+        "project": "aif",
+        "spider": "jiben",
+        "need_token": 1,
+        "plat_id": "23096",
+        "formated_url": "https://www.xinhehui.com/Api/XxiPlu/dailyBasicData",
+        "password": "xxpl_zjhjpt",
+        "is_upper": 1
+      }
+    },
+    {
+      "plat_id": "22456",
+      "post_data": {
+        "project": "aif",
+        "spider": "jiben",
+        "need_token": 1,
+        "plat_id": "22456",
+        "formated_url": "https://www.zjmax.com/dataout/dailyBasicData",
+        "password": "isdfsdf234908234kljsdf",
+        "is_upper": 1
+      }
+    },
+    {
+      "plat_id": "89234",
+      "post_data": {
+        "project": "aif",
+        "spider": "jiben",
+        "need_token": 1,
+        "plat_id": "89234",
+        "formated_url": "https://api.zwgt.com/interface-dailyBasicData",
+        "password": "zwgt2016",
+        "is_upper": 1,
+        "is_json": 1
+      }
+    },
+    {
+      "plat_id": "89390",
+      "post_data": {
+        "project": "aif",
+        "spider": "jiben",
+        "plat_id": "89390",
+        "formated_url": "https://trade.ddsoucai.com/third/cifc/dailyBasicData.html"
+      }
+    },
+    {
+      "plat_id": "89391",
+      "post_data": {
+        "project": "aif",
+        "spider": "jiben",
+        "plat_id": "89391",
+        "formated_url": "https://www.huayingdai.net/dataPub/dailyBasicData?date={date}",
+        "method": 1
+      }
+    },
+    {
+      "plat_id": "22139",
+      "post_data": {
+        "project": "aif",
+        "spider": "jiben",
+        "plat_id": "22139",
+        "formated_url": "http://122.224.222.218:49110/dailyBasicData.htm?date={date}",
+        "method": 1
+      }
+    }
+  ]
+}
