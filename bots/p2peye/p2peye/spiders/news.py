@@ -38,7 +38,7 @@ class newsSpider(scrapy.Spider):
         # print(total_page)
 
         # 每天爬前10页
-        # total_page = 1
+        total_page = 10
 
         for page in range(total_page, 0, -1):
             yield scrapy.Request(url=response.url + str(page) + '.html',
