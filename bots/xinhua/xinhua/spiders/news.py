@@ -86,7 +86,8 @@ class newsSpider(scrapy.Spider):
         news['thread'] = self.get_thread_from_url(response.url)
         news['source'] = response.url
         news['title'] = response.meta['title']
-        news['created'] = response.meta['created']
+        # news['created'] = response.meta['created']
+        news['created'] = get_content(response.xpath('//div[@class="reInfo"]/div[1]/span[2]/text()').extract())
 
         news['keywords'] = get_content(response.xpath('//meta[@name="keywords"]/@content').extract())
         news['summary'] = get_content(response.xpath('//meta[@name="description"]/@content').extract())

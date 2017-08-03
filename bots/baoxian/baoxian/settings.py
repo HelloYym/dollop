@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for rong360 project
+# Scrapy settings for baoxian project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -12,15 +12,14 @@
 from bots import setup_django_env
 setup_django_env()
 
+BOT_NAME = 'baoxian'
 
-BOT_NAME = 'rong360'
-
-SPIDER_MODULES = ['rong360.spiders']
-NEWSPIDER_MODULE = 'rong360.spiders'
+SPIDER_MODULES = ['baoxian.spiders']
+NEWSPIDER_MODULE = 'baoxian.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'rong360 (+http://www.yourdomain.com)'
+#USER_AGENT = 'baoxian (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 # ROBOTSTXT_OBEY = True
@@ -31,7 +30,7 @@ NEWSPIDER_MODULE = 'rong360.spiders'
 # Configure a delay for requests for the same website (default: 0)
 # See http://scrapy.readthedocs.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-#DOWNLOAD_DELAY = 3
+# DOWNLOAD_DELAY = 3
 # The download delay setting will honor only one of:
 #CONCURRENT_REQUESTS_PER_DOMAIN = 16
 #CONCURRENT_REQUESTS_PER_IP = 16
@@ -51,14 +50,15 @@ NEWSPIDER_MODULE = 'rong360.spiders'
 # Enable or disable spider middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'rong360.middlewares.Rong360SpiderMiddleware': 543,
+#    'baoxian.middlewares.BaoxianSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
-#DOWNLOADER_MIDDLEWARES = {
-#    'rong360.middlewares.MyCustomDownloaderMiddleware': 543,
-#}
+# DOWNLOADER_MIDDLEWARES = {
+#     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+#     'bots.base.middlewares.RotateUserAgentMiddleware': 400,
+# }
 
 # Enable or disable extensions
 # See http://scrapy.readthedocs.org/en/latest/topics/extensions.html
@@ -69,7 +69,7 @@ NEWSPIDER_MODULE = 'rong360.spiders'
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'rong360.pipelines.UniqueItemPersistencePipeline': 300,
+   'baoxian.pipelines.UniqueItemPersistencePipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

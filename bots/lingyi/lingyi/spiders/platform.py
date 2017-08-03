@@ -21,7 +21,7 @@ class PlatformSpider(scrapy.Spider):
     investor_cnt_body = 'cond%5Bwebsite%5D=www.lup2p.com&cond%5BgroupBy%5D=day&path=%2Fp2p-api%2Fplatform%2Finvestor.json'
     investor_avg_body = 'cond%5Bwebsite%5D=www.lup2p.com&cond%5BgroupBy%5D=day&path=%2Fp2p-api%2Fplatform%2Finvestor%2Favg.json'
     balance_body = 'cond%5Bwebsite%5D=www.lup2p.com&cond%5BgroupBy%5D=day&path=%2Fp2p-api%2Fplatform%2Fbalance.json'
-    days = 7
+    days = 10
 
     def start_requests(self):
         total_page = 10

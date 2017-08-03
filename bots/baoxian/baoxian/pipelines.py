@@ -8,6 +8,5 @@
 
 from bots.base.pipelines import BaseUniqueItemPersistencePipeline
 
-
 class UniqueItemPersistencePipeline(BaseUniqueItemPersistencePipeline):
     pass

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for rong360 project
+# Scrapy settings for nifa project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -12,15 +12,14 @@
 from bots import setup_django_env
 setup_django_env()
 
+BOT_NAME = 'nifa'
 
-BOT_NAME = 'rong360'
-
-SPIDER_MODULES = ['rong360.spiders']
-NEWSPIDER_MODULE = 'rong360.spiders'
+SPIDER_MODULES = ['nifa.spiders']
+NEWSPIDER_MODULE = 'nifa.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'rong360 (+http://www.yourdomain.com)'
+#USER_AGENT = 'nifa (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 # ROBOTSTXT_OBEY = True
@@ -51,13 +50,13 @@ NEWSPIDER_MODULE = 'rong360.spiders'
 # Enable or disable spider middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'rong360.middlewares.Rong360SpiderMiddleware': 543,
+#    'nifa.middlewares.NifaSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'rong360.middlewares.MyCustomDownloaderMiddleware': 543,
+#    'nifa.middlewares.MyCustomDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -69,7 +68,7 @@ NEWSPIDER_MODULE = 'rong360.spiders'
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'rong360.pipelines.UniqueItemPersistencePipeline': 300,
+   'nifa.pipelines.UniqueItemPersistencePipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

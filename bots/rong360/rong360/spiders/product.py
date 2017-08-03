@@ -82,9 +82,8 @@ class ProductSpider(scrapy.Spider):
 
         seq = json.loads(response.xpath('//script').re_first(r'history_7_charts = (.*)}') + '}')['data']
 
-        for (timestamp, rate) in seq[-1:]:
+        for (timestamp, rate) in seq[-7:]:
             product_day = copy.deepcopy(product)
             product_day['date'] = datetime.fromtimestamp(timestamp / 1000).strftime('%Y-%m-%d')
             product_day['rate'] = rate
             yield product_day
-            # print(product_day)

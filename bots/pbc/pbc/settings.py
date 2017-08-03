@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for rong360 project
+# Scrapy settings for pbc project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -12,18 +12,17 @@
 from bots import setup_django_env
 setup_django_env()
 
+BOT_NAME = 'pbc'
 
-BOT_NAME = 'rong360'
-
-SPIDER_MODULES = ['rong360.spiders']
-NEWSPIDER_MODULE = 'rong360.spiders'
+SPIDER_MODULES = ['pbc.spiders']
+NEWSPIDER_MODULE = 'pbc.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'rong360 (+http://www.yourdomain.com)'
+#USER_AGENT = 'pbc (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-# ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -51,14 +50,19 @@ NEWSPIDER_MODULE = 'rong360.spiders'
 # Enable or disable spider middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'rong360.middlewares.Rong360SpiderMiddleware': 543,
+#    'pbc.middlewares.PbcSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'rong360.middlewares.MyCustomDownloaderMiddleware': 543,
+#    'pbc.middlewares.MyCustomDownloaderMiddleware': 543,
 #}
+
+DOWNLOADER_MIDDLEWARES = {
+    'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+    'bots.base.middlewares.RotateUserAgentMiddleware': 400,
+}
 
 # Enable or disable extensions
 # See http://scrapy.readthedocs.org/en/latest/topics/extensions.html
@@ -69,7 +73,7 @@ NEWSPIDER_MODULE = 'rong360.spiders'
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'rong360.pipelines.UniqueItemPersistencePipeline': 300,
+   'pbc.pipelines.UniqueItemPersistencePipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
